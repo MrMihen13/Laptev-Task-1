@@ -205,15 +205,15 @@ void task20(Array& array) {
 
 int main()
 {
-  int size;
-  std::cin >> size;
-  double* input = new double[size];
+  int array_size;
+  std::cin >> array_size;
+  double* input = new double[array_size];
 
-  for (int i = 0; i < size; i++) {
+  for (int i = 0; i < array_size; i++) {
     std::cin >> input[i];
   }
 
-  Array arr = create_Array(input, size);
+  Array arr = create_Array(input, array_size);
 
   int code;
   double argument;
